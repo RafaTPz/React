@@ -16,7 +16,7 @@ export const AreaHeader = styled.div`
     flex: 1;
 
        img{
-        width: 45px;
+        width: 60px;
        }
    }
 

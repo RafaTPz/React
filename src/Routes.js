@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Config from './pages/Config';
+import Aboutus from './pages/Aboutus'
 
 export default function Routes(){
     return (
@@ -12,6 +13,9 @@ export default function Routes(){
             </Route>
             <Route exact path="/config">
                 <Config />
+            </Route>
+            <Route exact path="/aboutus">
+                <Aboutus />
             </Route>
         </Switch>
     );
