@@ -9,8 +9,41 @@ e inserir no meio de Header e Footer:
 return (
     <BrowserRouter>
       <Header />
-        <Routes />
+        rota
       <Footer />
     </BrowserRouter>
   );
 
+após isso criar um arquivo routes para melhor organização 
+e importar ao App 
+import Routes from './Routes';
+
+inserindo entre o Header e o Footer
+<Header />
+ <Routes />
+<Footer />
+
+em Routes inserir as funções necessarias do router para a função
+switch serve para unir as rotas
+e route serve para escolher a rota, na qual serão paginas
+import { Switch, Route } from 'react-router-dom';
+
+criar as páginas e inserir no Routes
+<Switch>
+     <Route exact path="/">
+        <Home />
+     </Route>
+     <Route exact path="/config">
+        <Config />
+     </Route>
+</Switch>
+
+no Header importar o 'Link' que funciona de forma parecida com o "a href=''"
+import { Link } from 'react-router-dom';
+
+<li><Link to="/">Home</Link></li>
+
+
+
+de modo geral, o Routes serve para anular os carregamentos de trocas de páginas,
+funcionando como se fosse uma só trocando os textos imagens exact
