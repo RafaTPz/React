@@ -1,4 +1,4 @@
-npx create-react-app reactjs
+npx create-react-app React
 
 cd reactjs
 npm start
