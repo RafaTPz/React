@@ -1,0 +1,39 @@
+npx create-react-app reactjs
+
+cd reactjs
+npm start
+
+public coisas que vao aparecer
+
+src coisas privadas, nao acessiveis
+
+sempre importar o react: import React from 'react';
+
+criar sua função e exportar no final:
+function App(){
+  return (
+    <div></div>
+  );
+}
+export default App;
+
+
+return voce so consegue adicionar mais items
+adicionando () exemplo return()
+return(
+    <div></div>
+    <h1></h1>
+    <p></p>
+);
+
+
+nessa região voce insere o app no index.js oficial
+dessa forma < 'nome />
+<React.StrictMode>
+    <App />
+  </React.StrictMode>
+
+criar pasta chamada components e colocar
+todos componentes que criar
+
+apagar arquivos desnecessarios do src e public

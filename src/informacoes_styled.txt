@@ -1,0 +1,25 @@
+npm install styled-components --save
+para importar no arquivo styled basta digitar:
+import styled from 'styled-components';
+
+após isso criar um export no qual voce vai colocar o css:
+export const AreaHeader = styled.div`
+  body{
+    align-items: center
+  }
+`;  em 'AreaHeader' será o nome do seu componente que você irá inserir
+no index especifico do tal styled:
+import  {AreaHeader} from './styled';
+
+no 'return' com demarcação do styled você irá documentar o seu site:
+return (
+          <AreaHeader>
+            <div className="container">
+              <div className="logo">
+                LOGOMARCA
+              </div>
+              </div>
+          </AreaHeader>
+);
+
+e lá no styled voce estará estilizando na mesma maneira que no css básico

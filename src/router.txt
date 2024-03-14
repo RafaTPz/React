@@ -1,0 +1,16 @@
+instalar o router: npm install react-router-dom --save
+criar o arquivo e importar as rotas no app
+import Routes from './Routes';
+
+importar tambem o BrowserRouter:
+import { BrowserRouter } from 'react-router-dom';
+
+e inserir no meio de Header e Footer:
+return (
+    <BrowserRouter>
+      <Header />
+        <Routes />
+      <Footer />
+    </BrowserRouter>
+  );
+
