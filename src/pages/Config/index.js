@@ -5,6 +5,7 @@ const Page = () => {
     return (
         <ContainerPage>
             <TitlePage>Config</TitlePage>
+            <p>For now, nothing on here</p>
         </ContainerPage>
         
     );
