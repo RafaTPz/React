@@ -4,6 +4,7 @@ export const AreaHeader = styled.div`
    height: 60px;
    background-color: #345;
    color: #fff;
+   box-shadow: 0 3px 3px 0 #0005;
 
    .container{
     padding: 5px 20px;
@@ -16,7 +17,7 @@ export const AreaHeader = styled.div`
     flex: 1;
 
        img{
-        width: 60px;
+        width: 50px;
        }
    }
 
