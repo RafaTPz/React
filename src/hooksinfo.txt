@@ -1,0 +1,19 @@
+Certifique-se de importar o useState do React no início do seu arquivo onde
+você planeja usá-lo. Isso é feito da seguinte maneira:
+  import React, { useState } from 'react';
+
+const MeuComponente = () => {
+  // Defina um estado inicial
+  const [contador, setContador] = useState(0);
+  // Aqui você pode usar o estado (contador) e a função para atualizá-lo (setContador)
+  return (
+    <div>
+      <p>Contador: {contador}</p>
+      <button onClick={() => setContador(contador + 1)}>Incrementar</button>
+    </div>
+  );
+}
+Explicação
+useState(0): Aqui estamos inicializando o estado contador com o valor 0.
+const [contador, setContador] = useState(0): O primeiro elemento contador é o estado atual, e setContador é a função que atualiza esse estado. Estes são nomes que você pode escolher.
+No exemplo acima, estamos renderizando o valor do contador dentro de um parágrafo (<p>), e quando o botão "Incrementar" é clicado, chamamos setContador para atualizar o estado contador adicionando 1 ao seu valor atual.

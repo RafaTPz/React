@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
-import Routes from './Routes';
+import Rotas from './Routes';
 
 function App(){
 
@@ -11,7 +11,7 @@ function App(){
     <BrowserRouter>
       <Header />
 
-        <Routes />
+        <Rotas />
 
       <Footer />
     </BrowserRouter>

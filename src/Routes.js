@@ -1,22 +1,18 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Config from './pages/Config';
 import Aboutus from './pages/Aboutus'
+import LoginPage from './pages/Loginpage';
 
-export default function Routes(){
+export default function Rotas() {
     return (
-        <Switch>
-            <Route exact path="/">
-                <Home />
-            </Route>
-            <Route exact path="/config">
-                <Config />
-            </Route>
-            <Route exact path="/aboutus">
-                <Aboutus />
-            </Route>
-        </Switch>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/config" element={<Config />} />
+            <Route path="/aboutus" element={<Aboutus />} />
+            <Route path="/login" element={<LoginPage/>} />
+        </Routes>
     );
 }
