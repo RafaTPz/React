@@ -47,3 +47,4 @@ import { Link } from 'react-router-dom';
 
 de modo geral, o Routes serve para anular os carregamentos de trocas de páginas,
 funcionando como se fosse uma só trocando os textos imagens exact
+

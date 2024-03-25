@@ -1,0 +1,13 @@
+TER COSTUME DE PROGRAMAR COM CONSOLE ABERTO
+
+possivei correçoes de erros:
+1
+loop infinito no useEffect
+ex: useEffect(() => {
+    setCount(count + 1);
+});
+
+solução:array vazio
+ex: useEffect(() => {
+    setCount(count + 1);
+}, []); ou definir alguma condição para o array
