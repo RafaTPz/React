@@ -12,7 +12,6 @@ export default function Rotas() {
             <Route path="/" element={<Home />} />
             <Route path="/config" element={<Config />} />
             <Route path="/aboutus" element={<Aboutus />} />
-            <Route path="/login" element={<LoginPage/>} />
         </Routes>
     );
 }
